@@ -4,7 +4,7 @@ export default function Footer() {
   const navigationItems = [
     {
       title: "Home",
-      href: "/",
+      href: "#",
       description: "",
     },
     {

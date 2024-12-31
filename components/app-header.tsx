@@ -23,7 +23,7 @@ export default function Header() {
     const navigationItems = [
         {
             title: "Home",
-            href: "/",
+            href: "#",
             description: "",
         },
         {
