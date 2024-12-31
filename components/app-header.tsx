@@ -17,7 +17,7 @@ import {
     DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import Link from "next/link";
-import { ChartNoAxesGantt, Mail } from "lucide-react";
+import { ChartNoAxesGantt } from "lucide-react";
 
 export default function Header() {
     const navigationItems = [
