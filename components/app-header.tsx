@@ -64,21 +64,23 @@ export default function Header() {
                 <div className="block sm:hidden ml-5">
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button variant="outline"><ChartNoAxesGantt/></Button>
+                            <Button variant="outline">
+                                <ChartNoAxesGantt />
+                            </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="ml-5">
-                          <DropdownMenuLabel>Links</DropdownMenuLabel>
-                          <DropdownMenuSeparator/>
-                          <DropdownMenuGroup>
-                            {navigationItems.map((item, k) => (
-                                <>
-                                    <DropdownMenuItem key={k}>
-                                        <Link href={item.href}>
-                                            {item.title}
-                                        </Link>
-                                    </DropdownMenuItem>
-                                </>
-                            ))}
+                            <DropdownMenuLabel>Links</DropdownMenuLabel>
+                            <DropdownMenuSeparator />
+                            <DropdownMenuGroup>
+                                {navigationItems.map((item, k) => (
+                                    <>
+                                        <DropdownMenuItem key={k}>
+                                            <Link href={item.href}>
+                                                {item.title}
+                                            </Link>
+                                        </DropdownMenuItem>
+                                    </>
+                                ))}
                             </DropdownMenuGroup>
                         </DropdownMenuContent>
                     </DropdownMenu>
