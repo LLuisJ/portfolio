@@ -83,9 +83,6 @@ export default function Header() {
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
-                <div className="flex justify-center mr-10">
-                    <p className="font-semilight">Luis Jäger</p>
-                </div>
             </div>
         </header>
     );
