@@ -30,7 +30,7 @@ export default function Projects() {
         odin: [
             {
                 title: "OBF",
-                description: "A Brainfuck compil written in Odin",
+                description: "A Brainfuck compiler written in Odin",
                 link: "https://github.com/LLuisJ/OBF",
             },
         ],
