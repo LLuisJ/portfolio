@@ -38,7 +38,7 @@ export default function Footer() {
                             </p>
                         </div>
                     </div>
-                    <div className="grid lg:grid-cols-3 gap-10 items-start">
+                    <div className="grid lg:grid-cols-4 gap-10 items-start">
                         {navigationItems.map((item) => (
                             <div
                                 key={item.title}

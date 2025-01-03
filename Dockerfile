@@ -14,8 +14,8 @@ FROM base AS builder
 
 WORKDIR /app
 
-ENV NEXT_PRIVATE_STANDALONE true
-ENV NEXT_TELEMETRY_DISABLED true
+ENV NEXT_PRIVATE_STANDALONE=true
+ENV NEXT_TELEMETRY_DISABLED=true
 
 COPY --from=deps /app/node_modules ./node_modules
 
@@ -27,7 +27,7 @@ FROM base AS runner
 
 WORKDIR /app
 
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
@@ -41,6 +41,6 @@ USER nextjs
 
 EXPOSE 3000
 
-ENV PORT 3000
+ENV PORT=3000
 
 CMD HOSTNAME="0.0.0.0" node server.js
