@@ -53,12 +53,7 @@ export default function UntilNow() {
                     <div>
                         Since 2023 I work at Bausparkasse Schwäbisch Hall AG as
                         an ingenieur in the Outputmanagement team. We are
-                        responsible for all the correspondence
-                        <p />
-                        (physical and eletronic) that goes to customers,
-                        business partners
-                        <p />
-                        and authorities.
+                        responsible for all the correspondence (physical and eletronic) that goes to customers and business partners.
                     </div>
                 </div>
             ),
