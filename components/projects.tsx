@@ -61,11 +61,11 @@ export default function Projects() {
             <Tabs defaultValue="go" className="w-[300px] sm:w-[500px] mx-auto">
                 <TabsList className="grid w-full grid-cols-3">
                     {Object.keys(projects).map((key) => (
-                        <TabsTrigger value={key}>{key}</TabsTrigger>
+                        <TabsTrigger key={key} value={key}>{key}</TabsTrigger>
                     ))}
                 </TabsList>
                 {Object.keys(projects).map((key) => (
-                    <TabsContent value={key}>
+                    <TabsContent key={key} value={key}>
                         <Carousel className="w-full max-w">
                             <CarouselContent>
                                 {projects[key].map((item, k) => (
