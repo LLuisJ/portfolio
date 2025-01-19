@@ -8,7 +8,7 @@ export function AppHero() {
                 <span>No idea what to do with this site...And you?</span>
                 <div className="text-lg">
                     My name is Luis, I&apos;m 27 and <p />
-                    from Germany. <p />I work as a software ingenieur.
+                    from Germany. <p />I work as a software engineer.
                 </div>
             </h2>
             <StarsBackground />
