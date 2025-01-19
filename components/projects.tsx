@@ -58,7 +58,7 @@ export default function Projects() {
             <div className="ml-5 text-3xl mb-10">
                 My Projects so far on Github
             </div>
-            <Tabs defaultValue="go" className="w-[300px] sm:w-[500px] mx-auto">
+            <Tabs defaultValue="Go" className="w-[300px] sm:w-[500px] mx-auto">
                 <TabsList className="grid w-full grid-cols-3">
                     {Object.keys(projects).map((key) => (
                         <TabsTrigger key={key} value={key}>{key}</TabsTrigger>
