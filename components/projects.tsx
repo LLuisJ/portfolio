@@ -22,6 +22,7 @@ interface Project {
     title: string;
     description: string;
     link: string;
+    linktext: string;
 }
 
 interface ProjectsObject {
@@ -35,6 +36,7 @@ export default function Projects() {
                 title: "ch",
                 description: "A small tool for creating/checking hashes",
                 link: "https://github.com/LLuisJ/ch",
+                linktext: "LLuisJ/ch"
             },
         ],
         "Odin": [
@@ -42,13 +44,15 @@ export default function Projects() {
                 title: "OBF",
                 description: "A Brainfuck compiler written in Odin",
                 link: "https://github.com/LLuisJ/OBF",
+                linktext: "LLuisJ/OBF"
             },
         ],
         "Web": [
             {
                 title: "Portfolio",
                 description: "This website here",
-                link: "https://github.com/LLuisJ/portfolio"
+                link: "https://github.com/LLuisJ/portfolio",
+                linktext: "LLuisJ/portfolio"
             }
         ]
     };
@@ -91,7 +95,7 @@ export default function Projects() {
                                                         }
                                                     >
                                                         <SquareArrowOutUpRight />
-                                                        {item.link}
+                                                        {item.linktext}
                                                     </Button>
                                                 </CardContent>
                                             </Card>
