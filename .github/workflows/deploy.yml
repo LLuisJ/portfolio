@@ -30,3 +30,14 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USER }}/portfolio:latest
             ${{ secrets.DOCKERHUB_USER }}/portfolio:${{ env.TIMESTAMP }}
+
+      - name: Update Docker Image on Server via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/portfolio
+            docker compose pull portfolio
+            docker compose up -d portfolio
