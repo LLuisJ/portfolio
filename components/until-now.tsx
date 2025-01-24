@@ -37,8 +37,7 @@ export default function UntilNow() {
                     <div>
                         I worked at Mytrix for 4 years and worked mainly with
                         <p />
-                        Java, HTML, CSS, JS and PL/SQL. <p />I also worked with
-                        InstallBuilder.
+                        Java, HTML, CSS, JS and PL/SQL.
                     </div>
                 </div>
             ),
@@ -52,8 +51,8 @@ export default function UntilNow() {
                     </div>
                     <div>
                         Since 2023 I work at Bausparkasse Schwäbisch Hall AG as
-                        an ingenieur in the Outputmanagement team. We are
-                        responsible for all the correspondence (physical and eletronic) that goes to customers and business partners.
+                        an software ingenieur.<p/>
+                        I mainly work with Java, Python, Oracle and some Bash.
                     </div>
                 </div>
             ),

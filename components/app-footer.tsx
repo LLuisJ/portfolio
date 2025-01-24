@@ -31,7 +31,7 @@ export default function Footer() {
                     <div className="flex gap-8 flex-col items-start">
                         <div className="flex gap-2 flex-col">
                             <h2 className="text-xl md:text-2xl tracking-tighter max-w-xl font-regular text-left">
-                                Luis Jäger ™, 2024
+                                Luis Jäger, 2025
                             </h2>
                             <p className="text-l max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
                                 Let&apos;s see how this goes...
