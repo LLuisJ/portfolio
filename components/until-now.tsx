@@ -35,7 +35,7 @@ export default function UntilNow() {
                         Software Ingenieur Mytrix GmbH
                     </div>
                     <div>
-                        I worked at Mytrix for 4 years and worked mainly with
+                        I worked at Mytrix for 4 years and mainly worked with
                         <p />
                         Java, HTML, CSS, JS and PL/SQL.
                     </div>
@@ -51,7 +51,7 @@ export default function UntilNow() {
                     </div>
                     <div>
                         Since 2023 I work at Bausparkasse Schwäbisch Hall AG as
-                        an software ingenieur.<p/>
+                        a software ingenieur.<p/>
                         I mainly work with Java, Python, Oracle and some Bash.
                     </div>
                 </div>
