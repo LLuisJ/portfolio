@@ -51,7 +51,7 @@ export default function UntilNow() {
                     </div>
                     <div>
                         Since 2023 I work at Bausparkasse Schwäbisch Hall AG as
-                        a software ingenieur.<p/>
+                        a software engineer.<p/>
                         I mainly work with Java, Python, Oracle and some Bash.
                     </div>
                 </div>
