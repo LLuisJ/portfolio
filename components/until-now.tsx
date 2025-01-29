@@ -32,7 +32,7 @@ export default function UntilNow() {
             content: (
                 <div>
                     <div className="text-3xl">
-                        Software Ingenieur Mytrix GmbH
+                        Software Engineer Mytrix GmbH
                     </div>
                     <div>
                         I worked at Mytrix for 4 years and mainly worked with
@@ -47,7 +47,7 @@ export default function UntilNow() {
             content: (
                 <div>
                     <div className="text-3xl">
-                        Software Ingenieur Bausparkasse Schwäbisch Hall AG
+                        Software Engineer Bausparkasse Schwäbisch Hall AG
                     </div>
                     <div>
                         Since 2023 I work at Bausparkasse Schwäbisch Hall AG as
