@@ -71,7 +71,7 @@ export default function Projects() {
                 My Projects so far on Github
             </div>
             <Tabs defaultValue="Go" className="w-[300px] sm:w-[500px] mx-auto">
-                <TabsList className="grid w-full grid-cols-3">
+                <TabsList className="grid w-full grid-cols-4">
                     {Object.keys(projects).map((key) => (
                         <TabsTrigger key={key} value={key}>{key}</TabsTrigger>
                     ))}
