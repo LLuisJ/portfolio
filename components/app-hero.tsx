@@ -7,7 +7,7 @@ export function AppHero() {
             <h2 className="relative flex-col z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
                 <span>No idea what to do with this site...And you?</span>
                 <div className="text-lg">
-                    My name is Luis, I&apos;m 27 and <p />
+                    My name is Luis, I&apos;m 28 and <p />
                     from Germany. <p />I work as a software engineer.
                 </div>
             </h2>
