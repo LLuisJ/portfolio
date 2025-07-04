@@ -1,122 +1,96 @@
 "use client";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
 } from "./ui/card";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "./ui/carousel";
 import { Button } from "./ui/button";
 import { SquareArrowOutUpRight } from "lucide-react";
+import { Badge } from "./ui/badge";
 
 interface Project {
     title: string;
     description: string;
     link: string;
     linktext: string;
+    badges: string[];
 }
 
 interface ProjectsObject {
-    [key: string]: Array<Project>
+    projectsArr: Array<Project>
 }
 
 export default function Projects() {
     const projects: ProjectsObject = {
-        "Go": [
+        projectsArr: [
             {
                 title: "ch",
                 description: "A small tool for creating/checking hashes",
                 link: "https://github.com/LLuisJ/ch",
-                linktext: "LLuisJ/ch"
+                linktext: "LLuisJ/ch",
+                badges: ["Go", "CLI"],
             },
-        ],
-        "Odin": [
             {
                 title: "OBF",
                 description: "A Brainfuck compiler written in Odin",
                 link: "https://github.com/LLuisJ/OBF",
-                linktext: "LLuisJ/OBF"
+                linktext: "LLuisJ/OBF",
+                badges: ["Odin", "Compiler"],
             },
-        ],
-        "Python": [
             {
                 title: "microserve",
                 description: "A python http library inspired by go's gin framework",
                 link: "https://github.com/LLuisJ/microserve",
-                linktext: "LLuisJ/microserve"
+                linktext: "LLuisJ/microserve",
+                badges: ["Python", "HTTP"],
             },
-        ],
-        "Web": [
             {
                 title: "Portfolio",
                 description: "This website here",
                 link: "https://github.com/LLuisJ/portfolio",
-                linktext: "LLuisJ/portfolio"
+                linktext: "LLuisJ/portfolio",
+                badges: ["Nextjs", "Web"],
             }
         ]
     };
 
     return (
-        <div id="projects" className="py-10 w-full">
+        <div id="projects" className="py-20 w-full z-40">
             <div className="ml-5 text-3xl mb-10">
                 My Projects so far on Github
             </div>
-            <Tabs defaultValue="Go" className="w-[300px] sm:w-[500px] mx-auto">
-                <TabsList className="grid w-full grid-cols-4">
-                    {Object.keys(projects).map((key) => (
-                        <TabsTrigger key={key} value={key}>{key}</TabsTrigger>
-                    ))}
-                </TabsList>
-                {Object.keys(projects).map((key) => (
-                    <TabsContent key={key} value={key}>
-                        <Carousel className="w-full max-w">
-                            <CarouselContent>
-                                {projects[key].map((item, k) => (
-                                    <CarouselItem key={k}>
-                                        <div className="p-1">
-                                            <Card>
-                                                <CardHeader>
-                                                    <CardTitle>
-                                                        {item.title}
-                                                    </CardTitle>
-                                                    <CardDescription>
-                                                        {item.description}
-                                                    </CardDescription>
-                                                </CardHeader>
-                                                <CardContent>
-                                                    <Button
-                                                        variant="outline"
-                                                        onClick={() =>
-                                                            window.open(
-                                                                item.link,
-                                                                "_blank"
-                                                            )
-                                                        }
-                                                    >
-                                                        <SquareArrowOutUpRight />
-                                                        {item.linktext}
-                                                    </Button>
-                                                </CardContent>
-                                            </Card>
-                                        </div>
-                                    </CarouselItem>
+            <div className="ml-5 mr-5 flex flex-wrap">
+                {projects.projectsArr.map((item, k) => (
+                    <div key={k} className="p-1 w-full md:w-1/2 lg:w-1/4 hover:scale-105 transition-transform duration-300">
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>{item.title}</CardTitle>
+                                <CardDescription>{item.description}</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Button
+                                    variant="outline"
+                                    onClick={() =>
+                                        window.open(item.link, "_blank")
+                                    }
+                                >
+                                    <SquareArrowOutUpRight />
+                                    {item.linktext}
+                                </Button>
+                            </CardContent>
+                            <CardFooter>
+                                {item.badges.map((badge, k) => (
+                                    <Badge key={k} variant="outline" className="mr-2 text-sky-300">{badge}</Badge>
                                 ))}
-                            </CarouselContent>
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
-                    </TabsContent>
+                            </CardFooter>
+                        </Card>
+                    </div>
                 ))}
-            </Tabs>
+            </div>
         </div>
     );
 }
