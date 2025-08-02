@@ -6,9 +6,9 @@ export default function UntilNow() {
             title: "1997-2016",
             content: (
                 <div>
-                    <div className="text-3xl">School</div>
+                    <div className="text-3xl">Kindergarden & School</div>
                     <div>
-                        Like everyone else I went to school. <p />I went to the
+                        Like everyone else I went to kindergarden and school. <p />I went to the
                         Gymnasium and left school in 11th grade.
                     </div>
                 </div>
