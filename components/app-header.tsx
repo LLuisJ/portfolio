@@ -44,27 +44,28 @@ export default function Header() {
     ];
 
     return (
-        <header className="w-full z-50 fixed top-0 left-0 bg-zinc-950">
-            <div className="container relative min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center justify-between">
-                <div className="justify-start items-center gap-4 lg:flex hidden flex-row hidden sm:block">
-                    <NavigationMenu className="flex justify-start items-start">
-                        <NavigationMenuList className="flex justify-start gap-4 flex-row">
+        <header className="w-full flex justify-center z-50 fixed top-0 left-0 bg-zinc-950">
+            <div className="relative min-h-20 flex items-center justify-center">
+                <div className="hidden md:flex items-center gap-6 px-6 py-2 rounded-full bg-[#16161a] border border-white/10 backdrop-blur">
+                    <NavigationMenu>
+                        <NavigationMenuList className="flex gap-8">
                             {navigationItems.map((item) => (
                                 <NavigationMenuItem key={item.title}>
-                                    <NavigationMenuLink href={item.href}>
-                                        <Button variant="ghost">
-                                            {item.title}
-                                        </Button>
+                                    <NavigationMenuLink
+                                        href={item.href}
+                                        className="text-sm text-gray-300 hover:text-white transition font-medium"
+                                    >
+                                        {item.title}
                                     </NavigationMenuLink>
                                 </NavigationMenuItem>
                             ))}
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
-                <div className="block sm:hidden ml-5">
+                <div className="block sm:hidden ml-5 b">
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button variant="outline">
+                            <Button variant="outline" className="rounded-full">
                                 <ChartNoAxesGantt />
                             </Button>
                         </DropdownMenuTrigger>
