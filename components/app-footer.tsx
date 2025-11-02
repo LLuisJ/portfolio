@@ -1,29 +1,5 @@
-import Link from "next/link";
 
 export default function Footer() {
-    const navigationItems = [
-        {
-            title: "Home",
-            href: "#",
-            description: "",
-        },
-        {
-            title: "Until Now",
-            href: "#untilnow",
-            description: "",
-        },
-        {
-            title: "Projects",
-            href: "#projects",
-            description: "",
-        },
-        {
-            title: "Contact",
-            href: "#contact",
-            description: "",
-        },
-    ];
-
     return (
         <div className="w-full py-10 lg:py-20 bg-background text-foreground">
             <div className="w-full flex justify-center">
