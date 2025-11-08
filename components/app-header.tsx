@@ -36,11 +36,6 @@ export default function Header() {
             href: "#projects",
             description: "",
         },
-        {
-            title: "Contact",
-            href: "#contact",
-            description: "",
-        },
     ];
 
     return (

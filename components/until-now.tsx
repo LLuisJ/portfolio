@@ -20,7 +20,7 @@ export default function UntilNow() {
                 <div>
                     <div className="text-3xl">Apprenticeship</div>
                     <div>
-                        I started my Apprenticeship at PowerCloud in Offenburg
+                        I started my apprenticeship at PowerCloud in Offenburg
                         <p />
                         and successfully finished it at Mytrix in Stuttgart.
                     </div>
