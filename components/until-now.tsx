@@ -3,7 +3,7 @@ import { Timeline } from "./ui/timeline";
 export default function UntilNow() {
     const data = [
         {
-            title: "1997-2016",
+            title: "April 1997 - August 2016",
             content: (
                 <div>
                     <div className="text-3xl">Kindergarden & School</div>
@@ -15,7 +15,7 @@ export default function UntilNow() {
             ),
         },
         {
-            title: "2016-2019",
+            title: "September 2016 - July 2019",
             content: (
                 <div>
                     <div className="text-3xl">Apprenticeship</div>
@@ -28,7 +28,7 @@ export default function UntilNow() {
             ),
         },
         {
-            title: "2019-2023",
+            title: "August 2019 - January 2023",
             content: (
                 <div>
                     <div className="text-3xl">
@@ -43,7 +43,7 @@ export default function UntilNow() {
             ),
         },
         {
-            title: "2023-",
+            title: "February 2023 - November 2025",
             content: (
                 <div>
                     <div className="text-3xl">
@@ -57,6 +57,20 @@ export default function UntilNow() {
                 </div>
             ),
         },
+        {
+            title: "December 2025 - Now",
+            content: (
+                <div>
+                    <div className="text-3xl">
+                        Senior Software Engineer Bausparkasse Schwäbisch Hall AG
+                    </div>
+                    <div>
+                        I was promoted to senior software engineer in december 2025.<p/>
+                        I continue working with Java, Python, Oracle and Bash, now with greater responsibility, feature ownership and oversight across said features.
+                    </div>
+                </div>
+            )
+        }
     ];
 
     return (
