@@ -41,7 +41,7 @@ export default function Header() {
     return (
         <header className="w-full flex justify-center z-50 fixed top-0 left-0">
             <div className="relative min-h-20 flex items-center justify-center">
-                <div className="hidden md:flex items-center gap-6 px-6 py-2 rounded-full bg-[#16161a] border border-white/10 backdrop-blur">
+                <div className="hidden md:flex items-center gap-6 px-6 py-2 rounded-full bg-[#16161a] border border-white/10 backdrop-blur-sm">
                     <NavigationMenu>
                         <NavigationMenuList className="flex gap-8">
                             {navigationItems.map((item) => (
