@@ -35,9 +35,7 @@ export default function UntilNow() {
                         Software Engineer Mytrix GmbH
                     </div>
                     <div>
-                        I worked at Mytrix for 4 years and mainly worked with
-                        <p />
-                        Java, HTML, CSS, JS and PL/SQL.
+                        I worked with Java, HTML, CSS and JavaScript, building and creating solutions for clients and using proprietary software where needed.
                     </div>
                 </div>
             ),
@@ -50,9 +48,7 @@ export default function UntilNow() {
                         Software Engineer Bausparkasse Schwäbisch Hall AG
                     </div>
                     <div>
-                        Since 2023 I work at Bausparkasse Schwäbisch Hall AG as
-                        a software engineer.<p/>
-                        I mainly work with Java, Python, Oracle and some Bash.
+                        I worked with Java and Python/Jython on enterprise systems, focusing on implementation, bug fixes, maintenance, and integrating external enterprise systems into out own platform,
                     </div>
                 </div>
             ),
@@ -65,8 +61,7 @@ export default function UntilNow() {
                         Senior Software Engineer Bausparkasse Schwäbisch Hall AG
                     </div>
                     <div>
-                        I was promoted to senior software engineer in december 2025.<p/>
-                        I continue working with Java, Python, Oracle and Bash, now with greater responsibility, feature ownership and oversight across said features.
+                        After my promotion, I took responsibility for features, planned stories, and delegated tasks, while continuing hands-on development with Java and Python/Jython.
                     </div>
                 </div>
             )
