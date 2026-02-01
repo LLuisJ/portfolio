@@ -5,7 +5,7 @@ export default function Footer() {
             <div className="w-full flex justify-center">
                 <div className="flex flex-col gap-4 items-center text-center">
                     <h2 className="text-xl md:text-2xl tracking-tighter font-regular">
-                        Luis Jäger, 2025
+                        Luis Jäger, 2026
                     </h2>
                     <p className="text-l max-w-lg leading-relaxed tracking-tight text-foreground/75">
                         Let&apos;s see how this goes...
