@@ -29,7 +29,7 @@ export default function Projects() {
         projectsArr: [
             {
                 title: "ch",
-                description: "A small tool for creating/checking hashes",
+                description: "A small hashing utility",
                 link: "https://github.com/LLuisJ/ch",
                 linktext: "LLuisJ/ch",
                 badges: ["Go", "CLI"],
@@ -43,7 +43,7 @@ export default function Projects() {
             },
             {
                 title: "microserve",
-                description: "A python http library inspired by go's gin framework",
+                description: "A gin inspired python http library",
                 link: "https://github.com/LLuisJ/microserve",
                 linktext: "LLuisJ/microserve",
                 badges: ["Python", "HTTP"],
@@ -59,13 +59,13 @@ export default function Projects() {
     };
 
     return (
-        <div id="projects" className="py-20 w-full z-40">
+        <div id="projects" className="py-20 w-full">
             <div className="ml-5 text-3xl mb-10">
                 My Projects so far on Github
             </div>
-            <div className="ml-5 mr-5 flex flex-wrap">
+            <div className="ml-5 mr-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {projects.projectsArr.map((item, k) => (
-                    <div key={k} className="p-1 w-full md:w-1/2 lg:w-1/4 hover:scale-105 transition-transform duration-300">
+                    <div key={k} className="p-1 hover:scale-105 transition-transform duration-300">
                         <Card>
                             <CardHeader>
                                 <CardTitle>{item.title}</CardTitle>
