@@ -60,9 +60,6 @@ export default function Projects() {
 
     return (
         <div id="projects" className="py-20 w-full">
-            <div className="ml-5 text-3xl mb-10">
-                My Projects so far on Github
-            </div>
             <div className="ml-5 mr-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {projects.projectsArr.map((item, k) => (
                     <div key={k} className="p-1 hover:scale-105 transition-transform duration-300">
