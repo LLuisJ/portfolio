@@ -70,7 +70,6 @@ export default function UntilNow() {
 
     return (
         <div id="untilnow" className="w-full py-10 bg-zinc-950">
-            <div className="ml-5 text-3xl bg-zinc-950">My life so far</div>
             <div>
                 <Timeline data={data} />
             </div>
