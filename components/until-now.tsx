@@ -61,7 +61,8 @@ export default function UntilNow() {
                         Senior Software Engineer Bausparkasse Schwäbisch Hall AG
                     </div>
                     <div>
-                        After my promotion, I took responsibility for features, planned stories, and delegated tasks, while continuing hands-on development with Java and Python/Jython.
+                        After my promotion, I took responsibility for features, planned stories, and delegated tasks, while continuing hands-on development with Java and Python/Jython.<p/>
+                        Additionally, I completed further training as a learning coach to support and mentor apprentices throughout their development.
                     </div>
                 </div>
             )
